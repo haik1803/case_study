@@ -24,6 +24,7 @@ export class AppComponent {
     }
 
     useLanguage(language: string) {
+        console.log(11);
         this.translateService.use(language);
     }
 }

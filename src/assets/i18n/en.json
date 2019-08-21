@@ -1,3 +1,12 @@
 {
-	"home.instruction": "Hello!"
+	"login.title": "Login",
+	"login.username": "Username",
+	"login.password": "Password",
+	"login.register": "Register",
+	"login.username_required": "Username is required",
+	"login.password_required": "Password  is required",
+	"home": {
+		"title": "Home",
+		"logout": "Logout"
+	}
 }

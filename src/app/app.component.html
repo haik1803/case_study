@@ -1,8 +1,15 @@
 <!-- nav -->
 <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
     <div class="navbar-nav">
-        <a class="nav-item nav-link" routerLink="/">Home</a>
-        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+        <a class="nav-item nav-link" routerLink="/">{{'home.title' | translate}}</a>
+        <a class="nav-item nav-link" (click)="logout()">{{'home.logout' | translate}}</a>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" (click)="useLanguage('en')">English</a>
+        <a class="nav-item nav-link" (click)="useLanguage('de')">German</a>
     </div>
 </nav>
 
@@ -18,12 +25,3 @@
     </div>
 </div>
 
-<!-- credits -->
-<div class="text-center">
-    <p>
-        {{ 'home.instruction' | translate }}
-    </p>
-</div>
-
-<button (click)="useLanguage('en')">en</button>
-<button (click)="useLanguage('de')">de</button>

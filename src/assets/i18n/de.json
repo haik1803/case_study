@@ -1,4 +1,13 @@
 {
-	"home.instruction": "Hallo!"
+	"login.title": "Anmeldung",
+	"login.username": "Nutzername",
+	"login.password": "Passwort",
+	"login.register": "Registrieren",
+	"login.username_required": "Ein Benutzername ist erforderlich",
+	"login.password_required": "Passwort wird benötigt",
+	"home": {
+		"title": "Zuhause",
+		"logout": "Ausloggen"
+	}
 
 }
