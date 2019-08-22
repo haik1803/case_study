@@ -15,6 +15,7 @@ import { RegisterComponent } from './register';
 import { AlertComponent } from './_components';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { ForTestComponent } from './for-test/for-test.component';
 
 @NgModule({
     imports: [
@@ -35,7 +36,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
         HomeComponent,
         LoginComponent,
         RegisterComponent,
-        AlertComponent
+        AlertComponent,
+        ForTestComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
